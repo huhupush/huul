@@ -1,0 +1,123 @@
+// 定义颜色
+
+// 定义默认颜色
+$index_total_color:#fff;
+$control_bg_color:rgba(255, 255, 255, 0.555);
+$qianse_box_shadow:0 2px 12px 0 rgba(0, 0, 0, 0.1);
+// 总的容器
+*{
+  padding: 0;
+  margin: 0;
+}
+.total{
+  width: 100%;
+  height: 100%;
+  background-color:$index_total_color;
+  .fadea-enter-active {
+    transition: all .6s ease;
+  }
+  .fadea-leave-active {
+    transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .fadea-enter, .fadea-leave-to
+  /* .slide-fade-leave-active for below version 2.1.8 */ {
+    transform: translateY(-200px);
+    opacity: 0.5;
+  }
+  .mengban{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(182, 165, 165, 0.603);
+    z-index: 999;
+    .donghua{
+      position: absolute;
+      left: 35%;
+      top: 30%;
+      width: 600px;
+      height: 400px;
+      background-color: rgba(255, 255, 255, 0.589);
+    }
+  }
+  .fade-enter-active {
+    transition: all .3s ease;
+  }
+  .fade-leave-active {
+    transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .fade-enter, .fade-leave-to
+  /* .slide-fade-leave-active for below version 2.1.8 */ {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  .lizi{
+    background-image: url("../staic/index_bg.jpg");
+    background-size: 100% ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .funa{
+    position: absolute;
+      left: 13px;
+      top: 25px;
+      height: 200px;
+      width: 20px;
+      background-color: rgb(201, 198, 198);
+      box-shadow: $qianse_box_shadow;
+      display: flex;
+      align-content: center;
+      opacity: 0.3;
+  }
+  .control{
+    width: 400px;
+    height: 246px;
+    background-color: $control_bg_color;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+    box-shadow: $qianse_box_shadow;
+    border-radius: 10px;
+    .fun{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 246px;
+      width: 20px;
+      background-color: rgb(201, 198, 198);
+      box-shadow: $qianse_box_shadow;
+      display: flex;
+      align-content: center;
+      i{
+        align-self: center;
+        height: 20px;
+        width: 20px;
+        padding: auto;
+        margin: auto;
+        z-index: 999;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+    }
+    .fun:hover{
+      background-color: rgb(235, 233, 233);
+    }
+    div{
+      height: 60px;
+      margin-left: -20px;
+    }
+    .ct_nm{
+      width: 600px;
+      height: 50px;
+      
+    }
+  }
+}
+
+

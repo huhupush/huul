@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.total {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.total .fadea-enter-active {
+  transition: all 0.6s ease;
+}
+.total .fadea-leave-active {
+  transition: all 0.4s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.total .fadea-enter,
+.total .fadea-leave-to {
+  transform: translateY(-200px);
+  opacity: 0.5;
+}
+.total .mengban {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(182, 165, 165, 0.603);
+  z-index: 999;
+}
+.total .mengban .donghua {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  width: 600px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.589);
+}
+.total .fade-enter-active {
+  transition: all 0.3s ease;
+}
+.total .fade-leave-active {
+  transition: all 0.4s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.total .fade-enter,
+.total .fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+.total .lizi {
+  background-image: url("../staic/index_bg.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.total .funa {
+  position: absolute;
+  left: 13px;
+  top: 25px;
+  height: 200px;
+  width: 20px;
+  background-color: #c9c6c6;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-content: center;
+  opacity: 0.3;
+}
+.total .control {
+  width: 400px;
+  height: 246px;
+  background-color: rgba(255, 255, 255, 0.555);
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 20;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.total .control .fun {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 246px;
+  width: 20px;
+  background-color: #c9c6c6;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-content: center;
+}
+.total .control .fun i {
+  align-self: center;
+  height: 20px;
+  width: 20px;
+  padding: auto;
+  margin: auto;
+  z-index: 999;
+  font-size: 20px;
+  font-weight: bold;
+}
+.total .control .fun:hover {
+  background-color: #ebe9e9;
+}
+.total .control div {
+  height: 60px;
+  margin-left: -20px;
+}
+.total .control .ct_nm {
+  width: 600px;
+  height: 50px;
+}

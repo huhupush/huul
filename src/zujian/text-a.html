@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+ 
+    #main{
+        width:350px;
+        height: 400px;
+        margin: 30px auto;
+        background:#fdf9f9;
+        border-radius: 10px;
+    }
+ 
+    .main{
+        height: 300px;
+        overflow-y:visible;
+        overflow-x: hidden;
+        border: 1px solid #f3eeee;
+        padding: 5px;
+    }
+ 
+    .main div{
+       height: 35px;
+       margin: 5px auto;
+       background: #ff000033;
+       line-height: 35px;
+       color:#fff;
+    }
+    
+    .button{
+      height: 35px;
+      margin: 25px auto 0;
+      width: 150px;
+      background: coral;
+      line-height: 35px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+ 
+        <div class="main">
+ 
+        </div>
+        <div class="button">添加</div>
+    </div>
+ 
+    <script>
+      let N=0;
+      let button=document.querySelector(".button")
+      let main=document.querySelector(".main")
+ 
+      button.οnclick=function(){
+         let div = document.createElement("div")
+          N++
+          div.innerHTML=N
+          main.appendChild(div)
+          main.scrollTop = main.scrollHeight;
+      }
+    </script>
+</body>
+</html>
