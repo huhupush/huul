@@ -25,9 +25,9 @@ Vue.use(echarts)
 
 
 
-// Vue.use(new VueSocketIO({
-//   debug: true,
-//   // 服务器端地址
-//   connection: 'http://192.168.0.109:5000/test',
+Vue.use(new VueSocketIO({
+  debug: true,
+  // 服务器端地址
+  connection: 'http://59.110.69.160',
   
-//  }))
+ }))

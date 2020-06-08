@@ -5,7 +5,7 @@
     <!-- 手机界面 -->
     <div v-if="pc==1" class="phone">
       <div class="pic">
-        <img src="../staic/h11.png" alt class="pic" />
+        <img src="https://pic.liesio.com/2020/06/03/0b9c8cde51dff.png" alt class="pic" />
       </div>
       <transition name="fade">
         <div class="section" v-if="dj==0">

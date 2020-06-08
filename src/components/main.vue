@@ -285,6 +285,7 @@ ul:nth-child(2n+1){
     transform: scale(1);
   }
 }
+
 .main {
   height: 100%;
   width: 100%;

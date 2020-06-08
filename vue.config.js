@@ -12,8 +12,16 @@ module.exports = {
   devServer: {
   
     proxy: {
+      '/sohu':{
+        target: 'https://pv.sohu.com/cityjson?ie=utf-8',
+        changeOrigin: true,
+        ws: true,
+        pathRewrite: {
+          '^/sohu': ''
+        }
+      },
       '/apia': {
-        target: 'http://59.110.69.160:8080/', //对应自己的接口
+        target: 'http://127.0.0.1:5000/', //对应自己的接口
         changeOrigin: true,
         ws: true,
         pathRewrite: {
@@ -26,14 +34,6 @@ module.exports = {
         ws: true,
         pathRewrite: {
           '^/jda': ''
-        }
-      },
-      '/socket.io': {
-        target: 'http://127.0.0.1:5000',
-        ws: true,
-        changeOrigin: true,
-        pathRewrite:{
-          '^/socket.io':''
         }
       }
     },
@@ -56,7 +56,8 @@ module.exports = {
       'Router': 'VueRouter',
       'md5':'md5',
       'element-ui': 'ELEMENT',
-      'echarts':'echarts'
+      'echarts':'echarts',
+      'BMap': 'BMap',
     },
     
 
