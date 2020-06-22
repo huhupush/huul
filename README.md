@@ -1,9 +1,10 @@
 # huul
 
-## VUE集成式前端项目
+## VUE前端项目
 ```
 包含自己做的几个项目
 ```
+
 ## Project setup
 ```
 npm install
