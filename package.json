@@ -16,7 +16,7 @@
     "sass-loader": "^8.0.2",
     "vue-particles": "^1.0.9",
     "vue-socket.io": "^3.0.9",
-    "zrender": "^4.3.1"
+    "zrender": "^5.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
